@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Weather Web Application</title>
+    <meta charset="utf-8"/>
+	<link href="weather.css" rel="stylesheet" />
+    <script type="text/javascript" src="weather.js"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>City: <input type="text" id="form-input" placeholder="Search City..."/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/>
+    </form>
+	
+	<div id = "data">
+		<p id="name">&nbsp;</p>
+		<div id="icon">&nbsp;</div>
+		<p id="output">&nbsp;</p>
+		<table align= "center">
+			<tr id="lon">&nbsp;</tr>
+			<tr id="lat">&nbsp;</tr>
+			<tr id="tosr">&nbsp;</tr>
+			<tr id="toss">&nbsp;</tr>
+			<tr id="pressure">&nbsp;</tr>
+			<tr id="humidity">&nbsp;</tr>
+			<tr id="temp">&nbsp;</tr>
+			<tr id="temp_min">&nbsp;</tr>
+			<tr id="temp_max">&nbsp;</tr>
+			<tr id="clouds">&nbsp;</tr>
+			<tr id="visibility">&nbsp;</tr>
+		</table>
+	</div>
+  </body>
+</html>
