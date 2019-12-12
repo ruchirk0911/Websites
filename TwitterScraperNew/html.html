@@ -1,0 +1,31 @@
+<html>
+<meta charset='utf-8' />
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+<body>
+<div id="twitterfeed">
+            
+            <ul id="jsonhere"></ul>
+</div>
+<script>
+$.get("tweets_json.php",function(data){
+i = 0;
+var x = JSON.parse(data);
+
+while(i<x.length){
+
+ $('#jsonhere').append("<li>"+x[i].text+"</li>");
+ i++;
+}
+});
+
+
+
+
+
+
+//var obj = JSON.parse(x);
+//console.log(obj.text);
+</script>
+</body>
+</html>

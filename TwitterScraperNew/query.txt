@@ -1,0 +1,1 @@
+db.tweets.aggregate([{$project:{_id:0,text:1}}])
